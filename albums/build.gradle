@@ -1,0 +1,25 @@
+apply plugin: 'com.android.library'
+
+apply from: '../config-android.gradle'
+apply plugin: 'kotlin-android'
+
+dependencies {
+
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation navigation.values()
+    implementation kotlinLib.kotlinStdLib
+    implementation di.koin
+    implementation 'com.github.corouteam:GlideToVectorYou:v2.0.0'
+    implementation "androidx.coordinatorlayout:coordinatorlayout:1.1.0"
+    implementation glide.glide
+    implementation lifecycle.values()
+    implementation design.values()
+    implementation network.values()
+    implementation coroutine.values()
+    testImplementation testDependencies.values()
+    testImplementation mockito.values()
+    testImplementation coroutineTest.coroutine_test
+    androidTestImplementation androidTestDependencies.values()
+
+    implementation project(path: ':core')
+}
