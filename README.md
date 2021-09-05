@@ -10,7 +10,7 @@ With main application and injections and access to all modules.
 # 3. albums
 Provides linear view of album titles. Tests including viewModel tests and database tests
 
-## Gradle
+# Gradle
 
 # 1. config-android.gradle
     - Contains android configuration. Enabled viewbinding and buildvariants. Flavors needs to be added here and this will be accessed by all libraries build.gradles
