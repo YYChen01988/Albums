@@ -9,6 +9,7 @@ With main application and injections and access to all modules.
 
 # 3. albums
 Provides linear view of album titles
+Test including viewModel tests and database tests
 
 ## Gradle
 
