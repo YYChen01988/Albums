@@ -39,11 +39,9 @@ class SqliteHelperTest {
 
     @Test
     fun `test get all albums in database`() {
-        database.insertAlbums(listOf(AlbumItem(1, 1, "Hello Test")))
-        database.insertAlbums(listOf(AlbumItem(2, 3, "Hello Test2")))
-
+        database.insertAlbums(listOf(AlbumItem(1, 1, "Hello Test"), AlbumItem(2, 2, "Hello Test2"), AlbumItem(3, 3, "Hello Test3")))
         val albums: List<AlbumItem> = database.getAllAlbums()
-        assertEquals(albums.size, 1)
+        assertEquals(albums.size, 3)
     }
 
 }
