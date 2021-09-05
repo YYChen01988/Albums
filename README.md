@@ -8,8 +8,7 @@ This can be accessed by all modules. Includes utils and abstractions.
 With main application and injections and access to all modules. 
 
 # 3. albums
-Provides linear view of album titles
-Test including viewModel tests and database tests
+Provides linear view of album titles. Tests including viewModel tests and database tests
 
 ## Gradle
 
