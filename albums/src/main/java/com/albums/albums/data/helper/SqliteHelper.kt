@@ -14,7 +14,7 @@ class SqliteHelper(
     companion object {
         private const val DATABASE_NAME = "album.db"
         private const val DATABASE_VERSION = 1
-        private const val ALBUM_TABLE = "albums"
+         const val ALBUM_TABLE = "albums"
         private const val ID = "id"
         private const val USER_ID = "user_id"
         private const val TITLE = "title"
