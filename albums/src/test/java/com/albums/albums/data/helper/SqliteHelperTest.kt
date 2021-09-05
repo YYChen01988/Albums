@@ -31,11 +31,19 @@ class SqliteHelperTest {
     }
 
     @Test
-    fun `test get all albums in database`() {
+    fun `test get one album in database`() {
         database.insertAlbums(listOf(AlbumItem(1, 1, "Hello Test")))
         val albums: List<AlbumItem> = database.getAllAlbums()
         assertEquals(albums.size, 1)
     }
 
+    @Test
+    fun `test get all albums in database`() {
+        database.insertAlbums(listOf(AlbumItem(1, 1, "Hello Test")))
+        database.insertAlbums(listOf(AlbumItem(2, 3, "Hello Test2")))
+
+        val albums: List<AlbumItem> = database.getAllAlbums()
+        assertEquals(albums.size, 1)
+    }
 
 }
