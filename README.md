@@ -31,3 +31,8 @@ Provides linear view of album titles. Tests including viewModel tests and databa
 7. Mockito
 8. Junit
 9. Ktlint
+
+# 4. Improvements
+1. Data base can extended functions (CURD)
+2. Albums can be removed or added and updated with UI interfaces
+3. Albums can be organised in different approaches such as text length
