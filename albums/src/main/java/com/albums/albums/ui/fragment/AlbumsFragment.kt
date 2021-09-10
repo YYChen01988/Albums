@@ -66,9 +66,10 @@ class AlbumsFragment : BaseFragment() {
                     }
                     Status.SUCCESS -> {
                         showSuccessResponse()
-                        it.data?.let { albums -> sqliteHelper.insertAlbums(albums)
-                        loadData(albums)
-                        }
+                        it.data?.let { albums ->
+                            val sortedAlbums = albums.sortedBy { it.title }
+                            sqliteHelper.insertAlbums(sortedAlbums)
+                            loadData(sortedAlbums)                        }
                     }
                     Status.ERROR -> showError(it.message ?: getString(R.string.error_loading_data))
                 }
