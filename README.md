@@ -1,5 +1,5 @@
 # Albums
-Display all the albums
+Display all the albums alphabetically and user can view the list without internet.
 
 # 1. Core
 This can be accessed by all modules. Includes utils and abstractions.
@@ -31,6 +31,7 @@ Provides linear view of album titles. Tests including viewModel tests and databa
 7. Mockito
 8. Junit
 9. Ktlint
+10. SOLite
 
 # Improvements
 1. Data base can extended functions (CURD)
