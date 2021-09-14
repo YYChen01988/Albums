@@ -67,7 +67,7 @@ class AlbumsFragment : BaseFragment() {
                     Status.SUCCESS -> {
                         showSuccessResponse()
                         it.data?.let { albums ->
-                            val sortedAlbums = albums.sortedBy { it.title }
+                            val sortedAlbums = albumsViewModel.sortedAlbums(albums)
                             sqliteHelper.insertAlbums(sortedAlbums)
                             loadData(sortedAlbums)                        }
                     }
@@ -103,4 +103,6 @@ class AlbumsFragment : BaseFragment() {
         val albums = sqliteHelper.getAllAlbums()
         loadData(albums)
     }
+
+
 }

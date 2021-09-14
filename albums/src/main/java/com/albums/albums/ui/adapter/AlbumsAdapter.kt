@@ -10,9 +10,7 @@ import com.albums.databinding.ListItemAlbumBinding
 class AlbumsAdapter(private val activity: BaseActivity, private val albums: List<AlbumItem>) :
     RecyclerView.Adapter<AlbumsAdapter.AlbumsAdapterViewHolder>() {
 
-//    var albumClicked: ((AlbumItem) -> Unit)? = null
-
-    var dataList = emptyList<AlbumItem>()
+    private var dataList = emptyList<AlbumItem>()
 
     internal fun setDataList(dataList: List<AlbumItem>) {
         this.dataList = dataList
